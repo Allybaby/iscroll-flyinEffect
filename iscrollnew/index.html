@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>iScroll 实例：下拉刷新，滚动翻页</title>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/scrollbar.css">
+<script type="application/javascript" src="js/iscroll.js"></script>
+<script type="application/javascript" src="js/main.js"></script>
+<script src="js/ieBetter.js"></script>
+<script src="js/parabola.js"></script>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div id="header">
+	<ul class="header">
+		<li>首页</li>
+		<li class="cur">所有商品</li>
+	</ul>
+</div>
+<div class="leftdata" id="leftdata">
+	<ul>
+		<li>零食类</li>
+		<li>水果类</li>
+		<li>生活用品</li>
+		<li>零食类</li>
+		<li>水果类</li>
+		<li>生活用品</li>
+		<li>零食类</li>
+		<li>水果类</li>
+		<li>生活用品</li>
+		<li>零食类</li>
+		<li>水果类</li>
+		<li>生活用品</li>
+		<li>零食类</li>
+		<li>水果类</li>
+		<li>生活用品</li>
+	</ul>
+</div>
+<div id="wrapper" class="wrapper01">
+	<div id="scroller" class="scroller01">
+		<div id="pullDown">
+			<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+		</div>
+		
+		<ul id="thelist">
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+			<li><span><img src="images/01.jpg" alt=""></span><span class="cart" onclick="get()">+</span></li>
+		</ul>
+		
+		<div id="pullUp">
+			<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+		</div>
+		
+	</div>
+</div>
+<div id="footer">
+	<div id="shopCart" class="shop_cart">购物车</div>
+</div>
+<div id="flyItem" class="fly_item">￥6.55</div>
+
+
+</body>
+</html>
